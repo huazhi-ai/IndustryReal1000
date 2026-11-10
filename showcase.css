@@ -1,0 +1,44 @@
+/* Media review edition · 2026-11-10 */
+.hero-carousel{margin:0 calc(50% - 50vw) 32px;background:#171e23;color:#f6f8f9;position:relative}
+.hero-carousel .title-backdrop{margin:0;min-height:480px;padding-bottom:70px}
+.hero-slide[hidden]{display:none!important}
+.hero-video-stage{height:480px;display:flex;align-items:center;justify-content:center;background:#10171d}
+.hero-video-stage video{display:block;width:100%;height:100%;object-fit:contain}
+.hero-toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:15px max(24px,calc((100vw - 1280px)/2));border-top:1px solid #ffffff24;background:#243039}
+.hero-tabs{display:flex;gap:24px;align-items:center}
+.hero-tabs button,.hero-controls button{color:#c8d0d5;background:none;border:0;font:inherit;cursor:pointer}
+.hero-tabs button{display:flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.4px;padding:4px 0;opacity:.6}
+.hero-tabs button[aria-pressed="true"]{opacity:1;color:#fff}
+.hero-tabs button span{font:12px Georgia,serif;border-bottom:1px solid transparent;padding:3px 0}
+.hero-tabs button[aria-pressed="true"] span{border-color:#e8edf0}
+.hero-controls{display:flex;gap:18px;align-items:center}
+.hero-controls button{font-size:12px;padding:4px;white-space:nowrap}
+.hero-controls .hero-arrow{font-size:20px;line-height:1}
+.hero-carousel button:focus-visible,.sample-section button:focus-visible,.sample-dialog button:focus-visible{outline:2px solid #8da9ba;outline-offset:4px}
+.sample-section{padding:34px 0 8px;margin-top:34px;border-top:1px solid var(--line);text-align:left}
+.sample-heading{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:22px}
+.sample-heading .section-number{font-size:10px;letter-spacing:2px;margin-bottom:10px}
+.sample-heading h2{font-size:30px;margin:0;font-weight:500;letter-spacing:1px}
+.sample-heading p{font-size:12px;color:var(--muted);margin:9px 0 0;line-height:1.8}
+.sample-toggle{font-size:12px;white-space:nowrap;border:1px solid #bbc6cc;padding:10px 16px;background:transparent;color:var(--blue)}
+.sample-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 20px}
+.sample-card{margin:0;min-width:0}
+.sample-media{display:block;width:100%;padding:0;border:0;position:relative;aspect-ratio:8/3;background:#172029;overflow:hidden;cursor:zoom-in}
+.sample-media img{display:block;width:100%;height:100%;object-fit:contain}
+.sample-enlarge{position:absolute;right:12px;bottom:10px;padding:5px 9px;background:#14212bbd;color:#fff;font-size:10px;letter-spacing:.5px;opacity:0;transition:opacity .2s}
+.sample-media:hover .sample-enlarge,.sample-media:focus-visible .sample-enlarge{opacity:1}
+.sample-card figcaption{padding:13px 0 0;display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.sample-card strong{font-size:14px;font-weight:500;color:var(--text)}
+.sample-card .sample-id{font-family:Georgia,serif;font-size:12px;color:#7c8e98;margin-right:12px}
+.sample-card small{font-size:10px;color:var(--muted);white-space:nowrap}
+.sample-footnote{display:flex;justify-content:space-between;gap:20px;margin:22px 0 0;color:#7b878e;font-size:10px;line-height:1.8}
+.sample-dialog{width:min(1200px,94vw);max-width:94vw;border:0;padding:18px;background:#f8f9f7;color:var(--text);box-shadow:0 24px 100px #0006}
+.sample-dialog::backdrop{background:#101a23d9}
+.sample-dialog header{display:flex;justify-content:space-between;align-items:center;border:0;padding:0 0 14px;margin:0}
+.sample-dialog h3{font-size:17px;font-weight:500;margin:0}
+.sample-dialog button{font-size:12px;padding:7px 12px}
+.sample-dialog img{display:block;width:100%;height:auto;background:#111a21}
+.sample-dialog p{font-size:11px;color:var(--muted);margin:12px 0 0}
+@media(min-width:1600px){.hero-carousel .title-backdrop,.hero-video-stage{min-height:540px;height:540px}}
+@media(max-width:700px){.hero-carousel{margin-bottom:24px}.hero-carousel .title-backdrop{min-height:440px;padding:52px 24px}.hero-video-stage{height:440px}.hero-toolbar{padding:13px 20px;gap:16px;flex-wrap:wrap}.hero-tabs{gap:20px}.hero-tabs button{font-size:11px}.hero-controls{gap:16px;margin-left:auto}.sample-section{margin-top:26px;padding-top:25px}.sample-heading{gap:14px;align-items:start}.sample-heading h2{font-size:25px}.sample-heading p{font-size:11px}.sample-toggle{font-size:11px;padding:8px 10px}.sample-grid{grid-template-columns:1fr;gap:24px}.sample-card strong{font-size:13px}.sample-footnote{display:block}.sample-footnote span{display:block}.sample-enlarge{opacity:1}.sample-dialog{padding:12px}}
+@media(prefers-reduced-motion:reduce){.sample-enlarge{transition:none}}

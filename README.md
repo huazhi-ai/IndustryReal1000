@@ -6,7 +6,7 @@
 
 直接打开 `index.html`，或运行 `python3 -m http.server 8000` 后访问 `http://localhost:8000`。
 
-在线访问：https://hivewang.github.io/industrial-scene-atlas/
+在线访问：https://huazhi-ai.github.io/IndustryReal1000/
 
 ## GitHub Pages
 
@@ -19,6 +19,8 @@
 - `app.js`：交互和候选原子动作规则。
 - `media.js`：素材索引；同目录的图片与视频为实拍素材。
 - `index.html`、`style.css`：页面结构与视觉样式。
+- `showcase.js`、`showcase.css`：首页轮播、双目动图展示及交互。
+- `ego-*.webp`、`pipeline.mp4`：动态数据样例与数据采集管线介绍视频。
 
 原子动作由任务文字推导，属于候选参考，并非逐帧人工标注。
 
